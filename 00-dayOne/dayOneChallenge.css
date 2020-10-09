@@ -1,0 +1,34 @@
+h1 {
+  color: lightgreen;
+  text-align: center;
+}
+
+h3 {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+.twoTruthsAndALie {
+  border: thick solid black;
+  border-radius: 30px;
+  background-color: grey;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.borderedSection {
+  border: 5px solid #fff;
+  border-radius: 20px;
+  background-color: lightgrey;
+  text-align: center;
+  min-width: 25%;
+  padding: 10px;
+  margin: 5px;
+}
