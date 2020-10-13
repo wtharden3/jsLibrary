@@ -81,3 +81,10 @@ let num = 6;
 
 // () ? true : false
 (num == 6) ? console.log('it\'s true'): console.log('This is not true');
+
+//Fizz Buzz
+
+let fB = 0;
+
+// if (fb%3 == 0)
+console.log(9 % 3);
