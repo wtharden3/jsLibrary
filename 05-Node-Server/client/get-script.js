@@ -60,6 +60,20 @@ function displayMine() {
           header.setAttribute('class', 'card-title');
           subtitle.setAttribute('class', 'card-subtitle mb-2 text-muted');
           para.setAttribute('class', 'card-text');
+
+          editBtn.setAttribute('class', 'btn btn-dark editBtn');
+          editBtn.setAttribute('type', 'button');
+          editBtn.setAttribute('onclick', `editJournal(${current.id})`);
+
+          deleteBtn.setAttribute('class', 'btn btn-dark deleteBtn');
+          deleteBtn.setAttribute('type', 'button');
+          deleteBtn.setAttribute('onclick', `deleteJournal(${current.id})`);
+
+          header.textContent = title;
+          subtitle.textContent = date;
+          para.textContent = entry;
+          editBtn.textContent = 'Edit';
+          deleteBtn.textContent = 'Delete';
         }
       }
     });
