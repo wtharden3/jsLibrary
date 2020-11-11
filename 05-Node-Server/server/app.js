@@ -9,7 +9,7 @@ let user = require('./controllers/usercontroller');
 
 //sequelize.sync();
 //sequelize.sync({ force: true });
-
+app.use(require('./middleware/header')); //must come before routers are declared
 // **** ADD LINE BELOW
 app.use(express.json()); //this must go above any routes
 
