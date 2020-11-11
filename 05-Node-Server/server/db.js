@@ -1,20 +1,15 @@
-const Sequelize = require('sequelize'); //1
-const sequelize = new Sequelize('journal-walkthrough', 'postgres', 'tiNVEACk', {
-  // 2, 3, 4, 5, 6
-  host: 'localhost', // 7
-  dialect: 'postgres', // 8
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  dialect: 'postgres'
 });
 
-sequelize.authenticate().then(
-  // 9, 10, 11
-  function () {
-    // 12
-    console.log('Connected to journal-walkthrough postgres database');
-  },
-  function (err) {
-    // 13
-    console.log(err);
-  }
-);
-
-module.exports = sequelize; //14
+// sequelize
+//   .authenticate()
+//   .then(() => {
+//     console.log('Connection has been established to journal-walkthrough successfully.');
+//   })
+//   .catch(err => {
+//     console.error('Unable to connect to the database:', err);
+//   });
+//console.log(sequelize);
+module.exports = sequelize;
