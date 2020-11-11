@@ -67,7 +67,7 @@ router.get('/:title', (req, res) => {
 router.put('/update/:entryId', validateSession, (req, res) => {
   const updateJournalEntry = {
     title: req.body.journal.title,
-    date: req.body.jouranl.date,
+    date: req.body.journal.date,
     entry: req.body.journal.entry
   };
 
